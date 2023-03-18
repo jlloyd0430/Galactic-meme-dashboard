@@ -37,6 +37,15 @@ function Home() {
     setImage(`./personal-images/meme${randomImage}.JPG`);
   };
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.download = "meme.jpg";
+    link.href = image;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="App">
       <button className="Btn" onClick={handleClick}>
@@ -45,19 +54,16 @@ function Home() {
 
       <header className="App-header">
         {image ? (
-          <img src={image} className="img" alt="random meme" />
+          <>
+            <img src={image} className="img" alt="random meme" />
+          </>
         ) : (
-          <p>generate a random Meme!</p>
+          <p>Generate a random Cardano meme!</p>
         )}
       </header>
-
-      <p className="upload-meme">Upload your own meme</p>
-      <input
-        type="file"
-        name="uploadedImage"
-        className="btn2"
-        onChange={handleUpload}
-      />
+      <button className="Btn" onClick={handleDownload}>
+        Download
+      </button>
     </div>
   );
 }

@@ -1,34 +1,25 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import logo from "./images/logo.PNG";
+import { Link } from "react-router-dom";
+import "./App.css";
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState("");
-
-  const toggleMenu = (page) => {
-    setMenuOpen(!menuOpen);
-    setCurrentPage(page);
-  };
 
   return (
     <header>
-      <Fragment>
-        {menuOpen ? (
-          <div className="menu">
-            <ul>
-              <li onClick={() => toggleMenu("derpbirds")}>Derpbirds</li>
-              <li onClick={() => toggleMenu("dbagmfers")}>Dbagmfers</li>
-            </ul>
-          </div>
-        ) : (
-          <div className="logo-title">
-            <img src={logo} alt="meme" className="logo" />
-            <h1 className="title">Meme Dashboard</h1>
-          </div>
-        )}
-      </Fragment>
-      <div className="menu-icon" onClick={() => toggleMenu("")}>
-        <i className="fa fa-bars"></i>
+      <div className="logo-title">
+        <img src={logo} alt="meme" className="logo" />
+        <h1 className="title">Meme Dashboard</h1>
+        <div className="pages">
+          <Link to="/mission" className="pages">
+            Browse
+          </Link>
+          <Link to="/gallery" className="pages">
+            Create
+          </Link>
+          {/* <Link to="/contact">Worksheet</Link> */}
+        </div>
       </div>
     </header>
   );

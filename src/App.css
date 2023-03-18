@@ -7,6 +7,12 @@
   pointer-events: none;
 }
 
+.pages {
+  float: right;
+  margin: 10px;
+  text-decoration: none;
+}
+
 img {
   width: 85%;
   height: auto;
@@ -17,6 +23,7 @@ img {
 
 .Btn {
   color: #000;
+  margin: auto;
 }
 
 .upload-meme {
