@@ -47,7 +47,7 @@ function Home() {
         {image ? (
           <img src={image} className="img" alt="random meme" />
         ) : (
-          <p>generate a random meme!</p>
+          <p>generate a random Meme!</p>
         )}
       </header>
 
