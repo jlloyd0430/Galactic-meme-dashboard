@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+
+  /* background-color: #000; */
+}
+
+.App {
+  font-family: sans-serif;
+  height: 100%;
+  background-color: #000;
+
+}
+
+.menu-icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+  background: url('https://cdn.jsdelivr.net/gh/voodootikigod/logo.js/src/logo-javascript.svg') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+
+.logo {
+  width: auto;
+  height: 80px;
+}
+
+.file {
+  width: 87px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 75px;
+  background: #94a7ae;
+  padding: 25px 30px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-right: 7px;
+  color: black;
+}
+
+.logo-title {
+  display: flex;
+  margin-right: auto;
+}
+
+.title {
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+  margin-top: 20px;
+}
+
+.course {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.input-text {
+  width: 280px;
+  height: 45px;
+  border-radius: 5px;
+  font-family: "Karla";
+  font-weight: 600;
+  font-size: 15px;
+  color: #0d0d0d;
+  padding: 15px;
+  border: 1px solid #d5d4d8;
+  /*   margin: 35px;
+ */
+}
+
+.input-text:focus-visible {
+  outline: 0;
+}
+
+.form-class {
+  display: flex;
+  justify-content: center;
+  /*   margin: 50px 0;
+ */
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  font-family: "Karla";
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -1px;
+  background: #94a7ae;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 
+.btn2 {
+  width: 100%;
+    height: 45px;
+    text-align: center;
+      letter-spacing: -1px;
+      background: #94a7ae;
+      text-decoration: none;
+} */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.input-container {
+  display: flex;
+  gap: 30px;
+}
+
+
+.meme {
+  max-width: 75%;
+  margin: 45px auto;
+  /* width: 590px; */
+  margin-top: 40px;
+  position: relative;
+  /*   display: none;
+ */
+}
+
+.footer {
+  background-color: #94a7ae;
+  height: 100%;
+
+}
+
+.upload-meme {
+  color: #000;
+  font-family: "Karla";
+  font-weight: 700;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+
+}
+
+.icons {
+  /* float: right; */
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  /* display: inline-block; */
+  /* justify-self: center; */
+  width: 38px;
+  height: 34px;
+
+}
+
+.copyright {
+  margin: 15px;
+}
+
+.info {
+  margin: 15px;
+  margin-bottom: 15px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 3px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.meme--img {
+  width: 100%;
+  height: 320px;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0px;
+  gap: 50px;
+  height: 100%;
+  /* flex: 100%; */
+}
+
+@media (min-width: 769px) {
+  .nav-menu {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin-right: 20px;
+  }
+
+  .nav-menu a {
+    padding: 15px 0;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom-color 0.2s ease-in-out;
+  }
+
+  .nav-menu a:hover,
+  .nav-menu a:focus {
+    border-bottom-color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  .logo-title {
+    margin-right: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background-color: #94a7ae;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .nav-menu li {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+
+@media (max-width: 600px) {
+  /* img {
+    width: 28px;
+    height: 24px;
+  } */
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0px;
+    gap: 50px;
+    height: 100%;
+    /* flex: 100%; */
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .course {
+    font-size: 15px;
+  }
+
+  .input-text {
+    width: 190px;
+  }
+
+  .meme {
+    width: 410px;
+  }
+
+  .form {
+    gap: 40px;
+  }
+
+  .meme--img {
+    width: 100%;
+    height: 320px;
+    margin: 0;
+  }
+
+  @media (max-width: 400px) {
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 60px 0px;
+      gap: 50px;
+      height: 100%;
+      /* flex: 100%; */
+    }
+
+    header {
+      padding: 10px;
+    }
+
+    .title {
+      font-size: 18px;
+    }
+
+    .course {
+      font-size: 12px;
+      margin-right: 2px;
+    }
+
+    .input-text {
+      width: 180px;
+    }
+
+    .input-container {
+      gap: 10px;
+    }
+
+    .meme {
+      max-width: 65%;
+      margin: 45px auto;
+      /* width: 590px; */
+      margin-top: 40px;
+      position: relative;
+      /*   display: none;
+         */
+    }
+
+    .meme--img {
+      width: 100%;
+      height: 320px;
+      margin: 0;
+    }
+
+    .form {
+      gap: 30px;
+    }
+  }
+}
