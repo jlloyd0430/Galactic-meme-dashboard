@@ -51,7 +51,7 @@ function Home() {
       <p className="welcome">
         Welcome to the home page of the Galactic Meme dashboard! peep our
         library of NFT/non-NFT related memes, upload, edit, post and download
-        your memes here.{" "}
+        your memes or others here.{" "}
       </p>
       <button className="Btn" onClick={handleClick}>
         Generate
