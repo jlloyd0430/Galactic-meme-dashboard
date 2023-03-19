@@ -10,7 +10,7 @@ export default function Navbar() {
         <Link to="/">
           <img src={logo} alt="meme" className="logo" />
         </Link>
-        <h1 className="title">Meme Dashboard</h1>
+        <h1 className="title">Galactic Memes</h1>
         <div className="pages">
           <Link to="/browse" className="pages">
             Browse

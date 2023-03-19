@@ -21,9 +21,14 @@ img {
   max-width: 100%;
 }
 
+.welcome {
+  margin: 10px;
+  font-family: "Karla";
+}
+
 .Btn {
   color: #000;
-  margin: auto;
+  margin: 10px;
 }
 
 .upload-meme {

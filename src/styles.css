@@ -192,6 +192,11 @@ img {
   bottom: 0;
 }
 
+.welcome {
+  margin: auto;
+  font-family: "Karla";
+}
+
 .top {
   top: 0;
 }
