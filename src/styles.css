@@ -86,10 +86,9 @@ img {
 }
 
 .form-class {
-  display: flex;
-  justify-content: center;
-  /*   margin: 50px 0;
- */
+  /* max-width: 500px; */
+  width: 100%;
+  margin: 0 auto;
 }
 
 .btn {
@@ -180,7 +179,7 @@ img {
   margin: 15px 0;
   padding: 0 3px;
   font-family: impact, sans-serif;
-  font-size: 2em;
+  font-size: 1em;
   text-transform: uppercase;
   color: white;
   letter-spacing: 1px;
@@ -272,6 +271,11 @@ img {
     color: #fff;
     text-decoration: none;
   }
+
+ .input-text {
+   width: 100%;
+   max-width: 280px;
+  }
 }
 
 
@@ -289,6 +293,11 @@ img {
     gap: 50px;
     height: 100%;
     /* flex: 100%; */
+  }
+
+  .input-text {
+    width: 100%;
+    max-width: 280px;
   }
 
   .title {
@@ -326,6 +335,11 @@ img {
       gap: 50px;
       height: 100%;
       /* flex: 100%; */
+    }
+
+    .input-text {
+      width: 100%;
+      max-width: 280px;
     }
 
     header {

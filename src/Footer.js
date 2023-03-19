@@ -16,7 +16,7 @@ export default function Footer() {
           <img src={gh} alt="github" className="icons" />
         </a>
         <a
-          href="https://twitter.com/bitcoins_son"
+          href="https://twitter.com/GalacticatsNFT"
           target="_blank"
           rel="noopener noreferrer"
         >

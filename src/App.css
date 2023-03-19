@@ -123,3 +123,9 @@ img {
   top: 0;
 }
 
+@media (max-width: 768px) {
+  .input-text {
+    width: 100%;
+    max-width: 280px;
+  }
+}

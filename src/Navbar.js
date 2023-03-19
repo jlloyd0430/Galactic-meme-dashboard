@@ -1,24 +1,23 @@
-import React, { useState } from "react";
-import logo from "./images/logo.PNG";
+import React from "react";
 import { Link } from "react-router-dom";
+import logo from "./images/logo.PNG";
 import "./App.css";
 
-export default function Header() {
-  const [currentPage, setCurrentPage] = useState("");
-
+export default function Navbar() {
   return (
     <header>
       <div className="logo-title">
-        <img src={logo} alt="meme" className="logo" />
+        <Link to="/">
+          <img src={logo} alt="meme" className="logo" />
+        </Link>
         <h1 className="title">Meme Dashboard</h1>
         <div className="pages">
-          <Link to="/mission" className="pages">
+          <Link to="/browse" className="pages">
             Browse
           </Link>
-          <Link to="/gallery" className="pages">
+          <Link to="/create" className="pages">
             Create
           </Link>
-          {/* <Link to="/contact">Worksheet</Link> */}
         </div>
       </div>
     </header>

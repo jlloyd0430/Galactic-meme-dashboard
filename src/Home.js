@@ -33,7 +33,7 @@ function Home() {
   };
 
   const handleClick = () => {
-    const randomImage = Math.floor(Math.random() * 16) + 1;
+    const randomImage = Math.floor(Math.random() * 31) + 1;
     setImage(`./personal-images/meme${randomImage}.JPG`);
   };
 
@@ -58,7 +58,7 @@ function Home() {
             <img src={image} className="img" alt="random meme" />
           </>
         ) : (
-          <p>Generate a random Cardano meme!</p>
+          <p>Generate a Cardano meme!</p>
         )}
       </header>
       <button className="Btn" onClick={handleDownload}>
