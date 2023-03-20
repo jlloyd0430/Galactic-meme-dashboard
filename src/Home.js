@@ -63,7 +63,7 @@ function Home() {
             <img src={image} className="img" alt="random meme" />
           </>
         ) : (
-          <p>Generate a Cardano meme!</p>
+          <p>Generate a meme!</p>
         )}
       </header>
       <button className="Btn" onClick={handleDownload}>
