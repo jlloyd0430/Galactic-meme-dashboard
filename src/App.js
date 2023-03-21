@@ -8,6 +8,19 @@ import Create from "./Create";
 import Browse from "./Browse";
 
 export default function App() {
+    const [password, setPassword] = useState("");
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  function handlePasswordChange(event) {
+    setPassword(event.target.value);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    if (password === "yarn") {
+      setLoggedIn(true);
+    }
+  }
   return (
     <div className="App">
       <Navbar />
