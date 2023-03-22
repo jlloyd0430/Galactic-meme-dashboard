@@ -43,6 +43,7 @@ export default function App() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              backgroundPosition: "center"
             }}
           >
             <form onSubmit={handleSubmit}>
