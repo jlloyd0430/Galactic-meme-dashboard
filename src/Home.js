@@ -56,7 +56,9 @@ function Home() {
       <button className="Btn" onClick={handleClick}>
         Generate
       </button>
-
+      <button className="Btn" onClick={handleDownload}>
+        Download
+      </button>
       <header className="App-header">
         {image ? (
           <>
@@ -66,9 +68,6 @@ function Home() {
           <p>Generate a meme!</p>
         )}
       </header>
-      <button className="Btn" onClick={handleDownload}>
-        Download
-      </button>
     </div>
   );
 }
