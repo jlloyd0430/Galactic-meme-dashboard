@@ -46,7 +46,6 @@ export default function App() {
             }}
           >
             <form onSubmit={handleSubmit}>
-              <div className="password-title">type password to enter</div>
               <label htmlFor="password">Password:</label>
               <input
                 type="password"
