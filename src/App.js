@@ -6,6 +6,7 @@ import Home from "./Home";
 import Footer from "./Footer";
 import Create from "./Create";
 import Browse from "./Browse";
+import backgroundImage from "./images/homeimg.JPG";
 
 export default function App() {
   const [password, setPassword] = useState("");
@@ -23,9 +24,9 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" style={{ height: "100vh" }}>
       <Navbar />
-      <div className="row">
+      <div className="row" style={{ height: "100%" }}>
         {loggedIn ? (
           <Routes>
             <Route path="/" element={<Home />} />
@@ -33,7 +34,17 @@ export default function App() {
             <Route path="/browse" element={<Browse />} />
           </Routes>
         ) : (
-          <div className="login-form">
+          <div
+            className="login-form"
+            style={{
+              backgroundImage: `url(${backgroundImage})`,
+              backgroundSize: "cover",
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <form onSubmit={handleSubmit}>
               <label htmlFor="password">Password:</label>
               <input
