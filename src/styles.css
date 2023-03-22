@@ -194,8 +194,10 @@ img {
 .welcome {
   margin: auto;
   font-family: "Karla";
+  padding: 12px;
+  border-radius: 20px;
+  background-color: #d5d4d8;
 }
-
 .top {
   top: 0;
 }
