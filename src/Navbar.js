@@ -5,21 +5,19 @@ import "./App.css";
 
 export default function Navbar() {
   return (
-    <header>
-      <div className="logo-title">
-        <Link to="/">
-          <img src={logo} alt="meme" className="logo" />
+    <header className="navbar">
+      <Link to="/">
+        <img src={logo} alt="meme" className="logo" />
+      </Link>
+      <h1 className="title">Galactic Memes</h1>
+      <nav className="nav-links">
+        <Link to="/browse" className="link">
+          Browse
         </Link>
-        <h1 className="title">Galactic Memes</h1>
-        <div className="pages">
-          <Link to="/browse" className="pages">
-            Browse
-          </Link>
-          <Link to="/create" className="pages">
-            Create
-          </Link>
-        </div>
-      </div>
+        <Link to="/create" className="link">
+          Create
+        </Link>
+      </nav>
     </header>
   );
 }
